@@ -1,0 +1,12 @@
+const highestOddNumber = (num) => {
+    let maxend = 0
+    for(let i =0 ; i < num.length ; i++){
+        if(Number(num.slice(0, i+1)) % 2 !== 0){
+            maxend = i+1
+        }
+    }
+    console.log(num.slice(0, maxend))
+
+}
+
+highestOddNumber("521")
